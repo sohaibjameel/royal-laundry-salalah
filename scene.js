@@ -31,11 +31,11 @@ function run() {
   camera.position.set(0, 2.6, 6.2);
   camera.lookAt(0, 0.2, 0);
 
-  scene.add(new THREE.HemisphereLight(0xffffff, 0x1b2559, 1.15));
-  const key = new THREE.DirectionalLight(0xffe2a8, 2.1);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x0b3b45, 1.15));
+  const key = new THREE.DirectionalLight(0xffe6c2, 2.1);
   key.position.set(3, 5, 4);
   scene.add(key);
-  const rim = new THREE.DirectionalLight(0x8fb4ff, 0.6);
+  const rim = new THREE.DirectionalLight(0x9fd4cf, 0.6);
   rim.position.set(-4, 2, -3);
   scene.add(rim);
 
@@ -70,7 +70,7 @@ function run() {
   const shCv = document.createElement('canvas'); shCv.width = shCv.height = 256;
   const sx = shCv.getContext('2d');
   const sg = sx.createRadialGradient(128, 128, 10, 128, 128, 128);
-  sg.addColorStop(0, 'rgba(5,10,35,.55)'); sg.addColorStop(1, 'rgba(5,10,35,0)');
+  sg.addColorStop(0, 'rgba(2,18,22,.55)'); sg.addColorStop(1, 'rgba(2,18,22,0)');
   sx.fillStyle = sg; sx.fillRect(0, 0, 256, 256);
   const shadow = new THREE.Mesh(new THREE.PlaneGeometry(L * 1.5, WD * 1.6), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(shCv), transparent: true, depthWrite: false }));
   shadow.position.z = -0.06;
