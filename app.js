@@ -1,6 +1,6 @@
 (function () {
   /* ---------- Carpet pattern (shared with the 3D scene) ---------- */
-  var C = { madder: '#9E2A2B', indigo: '#1B2559', gold: '#E3A72F', cream: '#F2E4C4', teal: '#2F6B66', rose: '#C8654A' };
+  var C = { madder: '#8E2430', indigo: '#0B3B45', gold: '#C9A46A', cream: '#EFE3C8', teal: '#3E7C72', rose: '#B5694F' };
 
   function diamond(ctx, cx, cy, w, h, fill) {
     ctx.beginPath(); ctx.moveTo(cx, cy - h); ctx.lineTo(cx + w, cy); ctx.lineTo(cx, cy + h); ctx.lineTo(cx - w, cy); ctx.closePath();
